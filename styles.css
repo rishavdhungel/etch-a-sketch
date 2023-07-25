@@ -1,0 +1,64 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+h1{
+ font-size: 2.5rem;
+ font-weight: bold;
+ text-align: center;
+ color:tomato;
+ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+
+
+.gridContainer {
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid black;
+    height: 500px;
+}
+
+.controller{
+    width: 50%;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+button{
+    width: 150px;
+    padding: 15px;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.grid16{
+    background-color: rgb(127, 202, 255);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+
+.grid50{
+    background-color: cadetblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+
+.grid100{
+    background-color: gold;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+
+.colorRandomizer{
+    background-color: royalblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
