@@ -1,11 +1,23 @@
 const griditems = document.querySelector(".griditems");
 const controller = document.querySelectorAll(".gridbtn");
-console.log(controller);
+
+function rgbavalue(){
+    let red = Math.floor(Math.random()*255);
+    let green = Math.floor(Math.random()*255);
+    let blue = Math.floor(Math.random()*255);
+    let randomvalue = "rgb("+red+","+green+","+blue+")";
+    return randomvalue;
+}
+
+
 
 //creating a function that will create a div element with .div-cell class
 function createGridCell(){
     let cell =document.createElement('div') ;
     cell.classList.add('grid-cell');
+    cell.addEventListener('click',function(){
+        cell.style.backgroundColor = rgbavalue();
+    });
     griditems.appendChild(cell);
 }
 
@@ -33,6 +45,7 @@ function addGridCells(cellsnumber){
         createGridCell();
     }
 }
+
 // Adding Event Listener to every buttons
 for ( let i = 0; i <controller.length; i ++){
     controller[i].addEventListener('click',function(){
@@ -41,3 +54,9 @@ for ( let i = 0; i <controller.length; i ++){
         addGridCells(gridcells);
     });
 }
+
+
+
+
+
+
